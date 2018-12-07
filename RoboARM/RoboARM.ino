@@ -13,7 +13,7 @@
       (Port)   : (Function)   (Color)  : (Signal)
         PE0    : Up/Down      (Black)  :   PWM
         PE5    : Forward/Back (Green)  :   PWM
-        PC5    : Claw	        (Yellow) :   PWM
+        PC5    : Claw         (Yellow) :   PWM
         PC4    : Rotation     (Blue)   :   PWM
 
     Movement:
