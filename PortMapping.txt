@@ -1,26 +1,40 @@
-Joystick:
-	PB5: X1 : Analog
-	PD2: Y1 : Analog
-	PB1: B2 : Digital
-	PB4: B3 : Digital
-	PB3: B1 : Digital
-	PB2: B4 : Digital
-Arm:
-	PD0: Up/Down      (Black) : PWM
-	PE5: Forward/Back (Green) : PWM
-	PC5: Claw	  (Yellow): PWM
-	PC4: Rotation     (Blue)  : PWM
+Pin Mappings:
+    Joystick:
+      (Port) : (Function) : (Signal)
+       PB5   :    X1      : Analog
+       PE4   :    Y1      : Analog
+       PB1   :    B2      : Digital
+       PB4   :    B3      : Digital
+       PB3   :    B1      : Digital
+       PB2   :    B4      : Digital
+    Arm:
+      (Port)   : (Function)   (Color)  : (Signal)
+        PE0    : Up/Down      (Black)  :   PWM
+        PE5    : Forward/Back (Green)  :   PWM
+        PC5    : Claw	      (Yellow) :   PWM
+        PC4    : Rotation     (Blue)   :   PWM
 
-Movement:
-	Button 1: Close claw
-	Button 2: Up
-	Button 3: Down
-	Button 4: Open claw
+    Movement:
+      Button 1: Close Claw
+      Button 2: Up
+      Button 3: Down
+      Button 4: Open Claw
 
-	x-axis: Rotation
-	y-axis: Foward/back
+      x-axis: Rotation
+      y-axis: Foward/Back
 
-Deadzone:
+    Deadzone:
+      x-avg = 1900 +/- 600
+      y-avg = 1832 +/- 500
 
-	x-avg = 2733 +- 150
-	y-avg = 1832 +- 120
+ The circuit for LCD:
+ * LCD RS pin to digital pin 28 (PE2)
+ * LCD Enable pin to digital pin 27  (PE1)
+ * LCD D4 pin to digital pin 23 (PD0)
+ * LCD D5 pin to digital pin 24 (PD1)
+ * LCD D6 pin to digital pin 25 (PD2)
+ * LCD D7 pin to digital pin 26 (PD3)
+ * LCD R/W pin to ground
+ * 10K resistor:
+ * ends to +5V and ground
+ * wiper to LCD VO pin (pin 3)
