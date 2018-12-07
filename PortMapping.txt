@@ -1,0 +1,26 @@
+Joystick:
+	PB5: X1 : Analog
+	PD2: Y1 : Analog
+	PB1: B2 : Digital
+	PB4: B3 : Digital
+	PB3: B1 : Digital
+	PB2: B4 : Digital
+Arm:
+	PD0: Up/Down      (Black) : PWM
+	PE5: Forward/Back (Green) : PWM
+	PC5: Claw	  (Yellow): PWM
+	PC4: Rotation     (Blue)  : PWM
+
+Movement:
+	Button 1: Close claw
+	Button 2: Up
+	Button 3: Down
+	Button 4: Open claw
+
+	x-axis: Rotation
+	y-axis: Foward/back
+
+Deadzone:
+
+	x-avg = 2733 +- 150
+	y-avg = 1832 +- 120
