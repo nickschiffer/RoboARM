@@ -44,7 +44,7 @@
  */
 #include <stdio.h>
 #include <Servo.h>
-#include <LiquidCrystal.h>
+#include <LiquidCrystal.h> //https://github.com/energia/Energia/tree/master/libraries/LiquidCrystal
 
 
 // #define DEBUG /* uncomment for Serial Debugging Output (causes severe lag with actual movements...Prints are expensive) */
